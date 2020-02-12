@@ -9,23 +9,22 @@
     <title>São Sebastião</title>
     <script type="text/javascript">
         function slide1(){
-        document.getElementById('id').src="./1.png";
-        setTimeout("slide2()", 2000)
+        document.getElementById('id').src="./um.jpg";
+        setTimeout("slide2()", 2500)
         }
           
         function slide2(){
-        document.getElementById('id').src="./2.png";
-        setTimeout("slide3()", 2000)
+        document.getElementById('id').src="./dois.jpg";
+        setTimeout("slide3()", 2500)
         }
           
         function slide3(){
-        document.getElementById('id').src="./3.png";
-        setTimeout("slide1()", 2000)
+        document.getElementById('id').src="./tres.jpg";
+        setTimeout("slide1()", 2500)
         }
     </script>
 </head>
 <body onLoad="slide1()">
-    <img src="3.png">
     <header id="cabecalho">
         <img id="logo" src="./brasao.png">
         <label for="caixamenu" id="menu_responsivo">MENU&#9776;</label>
