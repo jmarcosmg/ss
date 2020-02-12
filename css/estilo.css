@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#cabecalho{
+    background-color: red;
+    min-height: 50px;
+}
+
+#logo{
+    position: relative;
+    width: 7%;
+}
+
+#menu{
+    float: right;
+}
+
+#menu li{
+    list-style: none;
+    float: left;
+}
+
+#menu li :hover{
+    color: black;
+    background-color: white;
+}
+
+#menu a{
+    color: white;
+    font-size: 150%;
+    margin: 5px;
+    text-decoration: none;
+}
+
+#corpo div{
+	text-align: center;
+}
+
+#redesocial{
+    width: 5%;
+    float: right;
+}
+
+#avisos{
+    width: 50%;;
+    
+}
+
+#id{
+    width: 100%;
+}
+
+#rodape{
+    background-color: black;
+    min-height: 200px;
+    color: white;
+}
+
+#redesocial{
+    width: 5%;
+    float: right;
+}
+
+#menu_responsivo{
+    visibility: hidden;
+}
+
+@media screen and (max-width: 1000px){
+
+    #logo{
+        width: 20%;
+    }
+
+    #menu{
+        float: none;
+        position: relative;
+    }
+
+    #menu li{
+        float: none;
+        text-align: center;
+        font-size: 200%;
+        display: none;
+    }
+    #menu_responsivo{
+        visibility: visible;
+        position: absolute;
+        font-size: 200%;
+        color: white;
+        margin: 5% 0 0 65%;
+    }
+
+   #caixamenu:checked ~ #menu ul li {
+       display: block;
+   }
+
+   #redesocial{
+        width: 5%;
+        float: none;
+    }
+}

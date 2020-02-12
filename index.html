@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <div id="fb-root"></div>
+    <title>São Sebastião</title>
+    <script type="text/javascript">
+        function slide1(){
+        document.getElementById('id').src="1.png";
+        setTimeout("slide2()", 2000)
+        }
+          
+        function slide2(){
+        document.getElementById('id').src="2.png";
+        setTimeout("slide3()", 2000)
+        }
+          
+        function slide3(){
+        document.getElementById('id').src="3.png";
+        setTimeout("slide1()", 2000)
+        }
+    </script>
+</head>
+<body onLoad="slide1()">
+    <header id="cabecalho">
+        <img id="logo" src="./brasao.png">
+        <label for="caixamenu" id="menu_responsivo">MENU&#9776;</label>
+        <input id="caixamenu" type="checkbox" style="display: none;">
+        <nav id="menu">
+            <ul>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">MENU</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="corpo">
+        <div id="avisos">
+            <div class="flexslider">
+                <img id="id">
+            </div>
+        </div>
+        <div id="ss">
+            <img src="sao-sebastiao-moc.jpg" style="text-align: center;">
+            <h2>Paróquia São Sebastião</h2>
+            <p>Rua Francisco David, 98, Vila Guilhermina</p> 
+            <p>Montes Claros, Estado de Minas Gerais 39400-486</p> 
+            <p>Telefone: (55)(38) 3222-4493</p>
+            <h3>Horários das Missas</h3>
+            <p>Domingo: 07:00, 09:00, 19:00</p>
+            <p>Segunda: 07:00, 19:00</p>
+            <p>Terça: 07:00, 19:00</p>
+            <p>Quarta: 07:00, 19:00</p>
+            <p>Quinta: 07:00, 19:00</p>
+            <p>Sexta: 07:00, 19:00</p>
+            <p>Sabado: 07:00</p>
+        </div>
+    </main>
+    <footer id="rodape">
+        <p>Telefone: (38) 3083-3865 /  (38) 3222–4493</p>
+        <p>Email: saosebastiao.mcl@gmail.com</p>
+        <p>
+            Funcionamento na Secretaria Paroquial: Segunda-Feira: Expediente interno. 
+            Terça a sexta de 8h às 12h e 14h às 18h e Sábado de 8h às 12h
+        </p>
+        <p>Endereço: Rua Eloi Pereira, 153 – Vila Guilhermina / Cep: 39400-486 / Montes Claros-MG</p>
+        <img id="redesocial" src="facebook_icon-icons.com_59205.png" alt="">
+    </footer>
+</body onLoad="slide1()">
+</html>
