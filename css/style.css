@@ -98,9 +98,14 @@ body{
    #caixamenu:checked ~ #menu ul li {
        display: block;
    }
+   
+   #social{
+		text-align: center;
+   }
 
    #redesocial{
-        width: 5%;
+        width: 10%;
         float: none;
+		position: relative;
     }
 }
