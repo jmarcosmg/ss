@@ -9,18 +9,13 @@
     <title>São Sebastião</title>
     <script type="text/javascript">
         function slide1(){
-        document.getElementById('id').src="./1.PNG";
-        setTimeout("slide2()", 2500)
+        document.getElementById('id').src="IMG_20200327_192143.jpg";
+        setTimeout("slide2()", 3000)
         }
           
         function slide2(){
-        document.getElementById('id').src="./2.PNG";
-        setTimeout("slide3()", 2500)
-        }
-          
-        function slide3(){
-        document.getElementById('id').src="./3.PNG";
-        setTimeout("slide1()", 2500)
+        document.getElementById('id').src="IMG-20200327-WA0016.jpg";
+        setTimeout("slide1()", 3000)
         }
     </script>
 </head>
@@ -70,5 +65,5 @@
         <p>Endereço: Rua Eloi Pereira, 153 – Vila Guilhermina / Cep: 39400-486 / Montes Claros-MG</p>
         <img id="redesocial" src="facebook_icon-icons.com_59205.png" alt="">
     </footer>
-</body>
+</body onLoad="slide1()">
 </html>
